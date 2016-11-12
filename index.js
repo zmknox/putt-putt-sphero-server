@@ -8,6 +8,10 @@ app.get('/', function(req, res){
   res.sendfile('form.html');
 });
 
+app.get('/index.html', function(req, res){
+  res.sendfile('index.html');
+});
+
 app.use(express.static('public'));
 
 app.get('/css/bootstrap.min.css', function(req, res){
