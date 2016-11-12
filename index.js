@@ -9,17 +9,12 @@ app.get('/', function(req, res){
   res.sendfile('index.html');
 });
 
-app.get('style/style.css', function(req, res){
-  res.sendfile('style.css');
+app.use(express.static('public'));
+
+app.get('/css/bootstrap.min.css', function(req, res){
+  res.sendfile('node_modules/bootstrap3/dist/css/bootstrap.min.css');
 });
 
-app.get('/favicon.ico', function(req, res){
-  res.sendfile('favicon.ico');
-});
-
-app.get('scripts/functions.js', function(req, res){
-  res.sendfile('functions.js');
-});
 
 io.on('connection', function(socket){
     console.log("client connected");
