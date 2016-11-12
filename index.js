@@ -8,11 +8,13 @@ app.set('port', (process.env.PORT || 8000));
 
 /* This is not how you make a web server. Whatever man. */
 app.get('/', function(req, res){
-  res.sendfile('form.html');
-});
-app.get('/index.html', function(req, res){
   res.sendfile('index.html');
 });
+/* From a time when we thought we would be storing data on people
+app.get('/form.html', function(req, res){
+  res.sendfile('form.html');
+});
+*/
 
 /*
 //This doesn't work and I don't why pls help
