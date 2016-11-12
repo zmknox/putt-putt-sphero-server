@@ -1,3 +1,3 @@
-function catch(){
+function Name(){
   console.log(name);
 }
