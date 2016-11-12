@@ -1,10 +1,3 @@
-/** FUCK JAVASCRIPT **/
-require('bootstrap')
-$(".modal-fullscreen").on('show.bs.modal', function(){
-  setTimeout( function() {
-    $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
-  }, 0);
-});
-$(".modal-fullscreen").on('hidden.bs.modal',function(){
-  $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
-});
+function Name(){
+  prompt("Enter your name: ")
+};
