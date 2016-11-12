@@ -1,0 +1,17 @@
+{
+  "name": "sphero-gold-server",
+  "version": "1.0.0",
+  "description": "Server for a game of putt putt gold using a sphero.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sphero",
+    "gold",
+    "putt",
+    "putt"
+  ],
+  "author": "Zach Knox, Pat Murray, Eyad Hasan, Mattias Duffy",
+  "license": "MIT"
+}
