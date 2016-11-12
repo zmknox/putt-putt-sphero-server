@@ -14,11 +14,14 @@ function Name(){
 });**/
 
 function accCapture(){
+  var banananas = 0;
   window.ondevicemotion=function(event){
     var accelerationX = event.accelerationIncludingGravity.x;
     var accelerationY = event.accelerationIncludingGravity.y;
     var accelerationZ = event.accelerationIncludingGravity.z;
-    document.getElementById("test").innerHTML= accelerationY;
+    banananas = accelerationY;
+
   }
+  document.getElementById("test").innerHTML= banananas;
 
   };
