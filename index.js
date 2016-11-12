@@ -4,10 +4,6 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
 /* This is not how you make a web server. Whatever man. */
-<<<<<<< HEAD
-=======
-
->>>>>>> e721a367a790a76ef979cf16fb2d444fb3a4c759
 app.get('/', function(req, res){
   res.sendfile('index.html');
 });
