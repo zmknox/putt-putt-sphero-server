@@ -19,6 +19,9 @@ io.on('connection', function(socket){
     socket.on('disconnect', function() {
         console.log('client disconnected');
     });
+    socket.on('retrieve name', function(name){
+      console.log('Name: ' + name);
+    });
 });
 
 http.listen('8000', function(){
