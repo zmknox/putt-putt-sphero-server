@@ -18,6 +18,11 @@
   <script>
       var socket = io();
       console.log("connecting to socket");
+      socket.on("test", function(tweet) {
+          // todo: add the tweet as a DOM node
+          console.log("tweet from", tweet.username);
+          console.log("contents:", tweet.text);
+      });
   </script>
 </body>
 </html>

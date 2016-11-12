@@ -24,6 +24,11 @@ io.on('connection', function(socket){
     });
 });
 
+app.get('/test', function(req, res) {
+  io.emit("test", {user: "nodesource", text: "Hello, world!"})
+  res.sendfile('index.html');
+})
+
 http.listen('8000', function(){
     console.log('listening on port 8000');
 });
