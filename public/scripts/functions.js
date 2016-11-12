@@ -1,5 +1,4 @@
-var socket = io();
-
 function Name(){
-  socket.emit('retrieve name', name);
+  name = document.getElementById('nameInput').value;
+  console.log(name);
 }

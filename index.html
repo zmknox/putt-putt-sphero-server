@@ -1,20 +1,26 @@
 <html>
   <title>PuttPutt Sphero</title>
 <head>
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/style/style.css">
   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
   <!--link rel="function" type="text/javascript" href="/scripts/functions.js"-->
-  <script>
-    var name = prompt("Enter your name: ");
-  </script>
 </head>
 <body>
-  <h1><center>Putt Putt Sphero</center></h1>
+
+<div class="title-holder"><h1>Putt Putt Sphero</h1></div>
+  <div class="button-holder">
+    <div class="btn-group btn-group-lg" role="group">
+      <button type="button" class="btn btn-default btn-round">
+      Hold To Putt
+      </button>
+    </div>
+  </div>
+
 
   <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
 
   <script src="/scripts/functions.js" type="text/javascript"></script>
-  <script>Name();</script>
   <script>
       var socket = io();
       console.log("connecting to socket");
