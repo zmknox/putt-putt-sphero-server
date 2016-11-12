@@ -19,6 +19,10 @@ app.get('/script.js', function(req, res){
   res.sendfile('script.js');
 });
 
+app.get('/css/bootstrap.min.css', function(req, res){
+  res.sendfile('node_modules/bootstrap3/dist/css/bootstrap.min.css');
+});
+
 io.on('connection', function(socket){
     console.log("client connected");
     socket.on('disconnect', function() {
