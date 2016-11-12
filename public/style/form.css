@@ -1,0 +1,11 @@
+.row{
+  width: 35vw;
+  height: 35vw;
+  margin: 5px auto;
+  padding: 5px 0;
+
+}
+
+button.btn.btn-primary{
+  margin: 5px 0;
+}

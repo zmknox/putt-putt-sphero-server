@@ -5,7 +5,7 @@ var io = require('socket.io')(http);
 
 /* This is not how you make a web server. Whatever man. */
 app.get('/', function(req, res){
-  res.sendfile('index.html');
+  res.sendfile('form.html');
 });
 
 app.use(express.static('public'));
