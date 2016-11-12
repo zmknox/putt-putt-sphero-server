@@ -22,7 +22,15 @@ io.on('connection', function(socket){
     socket.on('disconnect', function() {
         console.log('client disconnected');
     });
+    socket.on('retrieve name', function(name){
+      console.log('Name: ' + name);
+    });
 });
+
+app.get('/test', function(req, res) {
+  io.emit("test", {user: "nodesource", text: "Hello, world!"})
+  res.sendfile('index.html');
+})
 
 http.listen('8000', function(){
     console.log('listening on port 8000');

@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/style/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
   <!--link rel="function" type="text/javascript" href="/scripts/functions.js"-->
 </head>
 <body>
@@ -22,7 +23,12 @@
   <script src="/scripts/functions.js" type="text/javascript"></script>
   <script>
       var socket = io();
-      console.log("test");
+      console.log("connecting to socket");
+      socket.on("test", function(tweet) {
+          // todo: add the tweet as a DOM node
+          console.log("tweet from", tweet.username);
+          console.log("contents:", tweet.text);
+      });
   </script>
 </body>
 </html>
