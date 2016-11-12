@@ -1,5 +1,5 @@
 {
-  "name": "sphero-gold-server",
+  "name": "sphero-golf-server",
   "version": "1.0.0",
   "description": "Server for a game of putt putt gold using a sphero.",
   "main": "index.js",
