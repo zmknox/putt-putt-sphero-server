@@ -4,6 +4,7 @@
   "description": "Server for a game of putt putt gold using a sphero.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

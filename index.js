@@ -3,6 +3,8 @@ var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
+app.set('port', (process.env.PORT || 8000));
+
 /* This is not how you make a web server. Whatever man. */
 app.get('/', function(req, res){
   res.sendfile('form.html');
@@ -32,6 +34,6 @@ app.get('/test', function(req, res) {
   res.sendfile('index.html');
 })
 
-http.listen('8000', function(){
-    console.log('listening on port 8000');
+app.listen(app.get('port'), function(){
+    console.log('listening on port', app.get('port'));
 });
