@@ -5,6 +5,7 @@ function Name(){
   console.log(name);
   socket.emit('retrieve name', name);
 };
+
 /**$(function(){
   $( "button.button" ).bind( "tap", tapHandler );
 

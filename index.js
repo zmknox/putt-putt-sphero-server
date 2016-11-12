@@ -45,10 +45,15 @@ io.on('connection', function(socket){
     socket.on('retrieve name', function(name){
       console.log('Name: ' + name);
     });
+    //We're lazy and are sending motion data to everybody who is connected.
+    socket.on('motion data', function(motionData){
+      io.emit('motion data', motionData);
+    });
+
 });
 
 app.get('/test', function(req, res) {
-  io.emit("test", {user: "nodesource", text: "Hello, world!"})
+  io.emit("test", {user: "nodesource", text: "Hello, world!"});
   res.sendfile('index.html');
 })
 
