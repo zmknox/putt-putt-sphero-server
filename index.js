@@ -32,6 +32,6 @@ app.get('/test', function(req, res) {
   res.sendfile('index.html');
 })
 
-http.listen('8000', function(){
-    console.log('listening on port 8000');
+http.listen('80', function(){
+    console.log('listening on port 80');
 });
